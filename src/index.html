@@ -1,14 +1,40 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TestAsesoftwareFront</title>
-  <base href="/">
+<!DOCTYPE html>
+<html lang="es">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <meta charset='utf-8'>
+  <title>Page Title</title>
+  <base href="/">
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <!--Menu-->
+      <div class="col-sm-3 side-menu pt-5 h-auto">
+        <div class="title mb-5">
+            <h1>AseSoftware</h1>
+        </div>
+
+        <div class="row d-flex flex-row-reverse">
+          <a class="button-menu rounded-0 btn btn-lg" href="/listar"><i
+              class="material-icons md-18 float-left icon">date_range</i>Lista Mecanicos</a>
+        </div>
+        <div class="row d-flex flex-row-reverse">
+          <a class="button-menu rounded-0 btn btn-lg" href="/guardar"><i
+              class="material-icons md-18 float-left icon">date_range</i>Crear Mecanico</a>
+        </div>
+      </div>
+      <div class="col-sm-9 p-5">
+        <app-root></app-root>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

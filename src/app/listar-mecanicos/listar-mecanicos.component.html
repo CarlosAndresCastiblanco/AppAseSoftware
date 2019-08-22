@@ -1,0 +1,54 @@
+<!--Content-->
+<!--titulo-->
+<div class="row mb-2">
+    <div class="col" style="font-size: 25px">
+        Reservas Realizadas
+    </div>
+</div>
+<!--Fecha-->
+<div class="row mb-4">
+    <div class="col">
+        <form class="form-inline" method="POST" action="#">
+            <div class="form-group mb-2">
+                <label for="date" class="mr-2">Seleccionar fecha: </label>
+                <input type="date" class="form-control rounded-pill" value="2019-08-17" onchange="this.form.submit()"
+                    id="date">
+            </div>
+        </form>
+    </div>
+
+</div>
+<!--Tabla-->
+<div class="row mb-2">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Tipo Documento</th>
+                <th scope="col">Numero Documento</th>
+                <th scope="col">Primer Nombre</th>
+                <th scope="col">Segundo Nombre</th>
+                <th scope="col">Primer Apellido</th>
+                <th scope="col">Segundo Apellido</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Email</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let meca of mecanicos">
+                <td> {{meca.tipoDocumento}} </td>
+                <td> {{meca.documento}} </td>
+                <td> {{meca.primerNombre}} </td>
+                <td> {{meca.segundoNombre}} </td>
+                <td> {{meca.primerApellido}} </td>
+                <td> {{meca.segundoApellido}} </td>
+                <td> {{meca.celular}} </td>
+                <td> {{meca.direccion}} </td>
+                <td> {{meca.email}} </td>
+                <td> {{meca.estado}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
