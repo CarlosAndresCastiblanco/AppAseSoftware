@@ -24,7 +24,8 @@ export class AppComponent {
       celular: "3193709808",
       direccion: "Cra 53",
       email: "andres@lits.com",
-      estado: "D"
+      estado: "D",
+      tiempo: 1200
     } 
 
     this.api.saveMecanicos(mecanico).subscribe((meca:Mecanico) => {console.log(meca)});

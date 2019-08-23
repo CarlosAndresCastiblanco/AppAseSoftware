@@ -37,17 +37,18 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor = "let meca of mecanicos">
-                <td> {{meca.tipoDocumento}} </td>
-                <td> {{meca.documento}} </td>
-                <td> {{meca.primerNombre}} </td>
-                <td> {{meca.segundoNombre}} </td>
-                <td> {{meca.primerApellido}} </td>
-                <td> {{meca.segundoApellido}} </td>
-                <td> {{meca.celular}} </td>
-                <td> {{meca.direccion}} </td>
-                <td> {{meca.email}} </td>
-                <td> {{meca.estado}} </td>
+            <tr *ngFor = "let meca of mecanicos; let i = index">
+                <td *ngIf = "i < 10"> {{meca.tipoDocumento}} </td>
+                <td *ngIf = "i < 10"> {{meca.documento}} </td>
+                <td *ngIf = "i < 10"> {{meca.primerNombre}} </td>
+                <td *ngIf = "i < 10"> {{meca.segundoNombre}} </td>
+                <td *ngIf = "i < 10"> {{meca.primerApellido}} </td>
+                <td *ngIf = "i < 10"> {{meca.segundoApellido}} </td>
+                <td *ngIf = "i < 10"> {{meca.celular}} </td>
+                <td *ngIf = "i < 10"> {{meca.direccion}} </td>
+                <td *ngIf = "i < 10"> {{meca.email}} </td>
+                <td *ngIf = "i < 10"> {{meca.estado}} </td>
+                <td *ngIf = "i < 10"> {{meca.tiempo}} </td>
             </tr>
         </tbody>
     </table>

@@ -16,6 +16,6 @@ export class ApiTestService {
   }
 
   getMecanicos():Observable<Mecanico[]>{
-    return this.http.get<Mecanico[]>(this.url + "mecanicos/mecanicos");
+    return this.http.get<Mecanico[]>(this.url + "serviciosxmantenimiento/getmantenimientos");
   }
 }

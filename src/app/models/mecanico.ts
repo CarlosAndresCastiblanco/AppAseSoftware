@@ -9,4 +9,5 @@ export class Mecanico {
     direccion: String;
     email: String;
     estado: String;
+    tiempo: Number;
 }
